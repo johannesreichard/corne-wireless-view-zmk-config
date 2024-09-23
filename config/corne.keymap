@@ -35,7 +35,7 @@
             bindings = <
 &kp TAB    &kp X   &kp V   &kp L     &kp C      &kp W    &kp K  &kp H      &kp G      &kp F    &kp Q  &kp BSPC
 &kp LCTRL  &kp U   &kp I   &kp A     &kp E      &kp O    &kp S  &kp N      &kp R      &kp T    &kp D  &kp Z
-&kp LSHFT  ZMK_UNICODE_PAIR(de_ue)  ZMK_UNICODE_PAIR(de_oe)  ZMK_UNICODE_PAIR(de_ae)    &kp P      &kp Y    &kp B  &kp M      &kp COMMA  &kp DOT  &kp J  &kp ESC
+&kp LSHFT  &kp Ü   &kp Ö   &kp Ä     &kp P      &kp Y    &kp B  &kp M      &kp COMMA  &kp DOT  &kp J  &kp ESC
                            &kp LGUI  &kp SPACE  &mo 1    &mo 2  &kp ENTER  &kp RALT
             >;
         };
@@ -44,7 +44,7 @@
             display-name = "Lower";
             bindings = <
 &kp TAB    &none          &kp UNDERSCORE  &kp LBKT  &kp RBKT   &kp RCTRL       &kp EXCLAMATION  &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL         &kp AMPERSAND  &kp BSPC
-&trans     &kp BACKSLASH  &kp SLASH       &kp LBRC  &kp RBRC   &kp ASTERISK    &kp QUESTION     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS         &kp COLON      &kp AT_SIGN
+&kp ß      &kp BACKSLASH  &kp SLASH       &kp LBRC  &kp RBRC   &kp ASTERISK    &kp QUESTION     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS         &kp COLON      &kp AT_SIGN
 &kp LSHFT  &kp POUND      &kp DOLLAR      &kp PIPE  &kp TILDE  &kp GRAVE       &kp PLUS         &kp PERCENT           &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp SEMICOLON  &trans
                                           &kp LGUI  &trans     &kp SPACE       &kp RET          &trans                &kp RALT
             >;
