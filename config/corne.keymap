@@ -33,39 +33,39 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp TAB    &kp X   &kp V   &kp L     &kp C      &kp W    &kp K  &kp H      &kp G      &kp F    &kp Q  &kp BSPC
-&kp LCTRL  &kp U   &kp I   &kp A     &kp E      &kp O    &kp S  &kp N      &kp R      &kp T    &kp D  &kp Z
-&kp LSHFT  &kp Ü   &kp Ö   &kp Ä     &kp P      &kp Y    &kp B  &kp M      &kp COMMA  &kp DOT  &kp J  &kp ESC
-                           &kp LGUI  &kp SPACE  &mo 1    &mo 2  &kp ENTER  &kp RALT
+&kp TAB    &kp X       &kp V        &kp L       &kp C      &kp W      &kp K  &kp H      &kp G      &kp F    &kp Q  &kp BSPC
+&kp LCTRL  &kp U       &kp I        &kp A       &kp E      &kp O      &kp S  &kp N      &kp R      &kp T    &kp D  &kp Z
+&kp LSHFT  &kp &de_oe  &kp &de_ae   &kp &de_ue  &kp P      &kp Y      &kp B  &kp M      &kp COMMA  &kp DOT  &kp J  &kp ESC
+                                    &kp LGUI    &kp SPACE  &mo 1      &mo 2  &kp ENTER  &kp RALT
             >;
         };
 
         lower_layer {
             display-name = "Lower";
             bindings = <
-&kp TAB    &none          &kp UNDERSCORE  &kp LBKT  &kp RBKT   &kp RCTRL       &kp EXCLAMATION  &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL         &kp AMPERSAND  &kp BSPC
-&kp ß      &kp BACKSLASH  &kp SLASH       &kp LBRC  &kp RBRC   &kp ASTERISK    &kp QUESTION     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS         &kp COLON      &kp AT_SIGN
-&kp LSHFT  &kp POUND      &kp DOLLAR      &kp PIPE  &kp TILDE  &kp GRAVE       &kp PLUS         &kp PERCENT           &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp SEMICOLON  &trans
-                                          &kp LGUI  &trans     &kp SPACE       &kp RET          &trans                &kp RALT
+&kp TAB    &none          &kp UNDERSCORE  &kp LBKT  &kp RBKT   &kp RCTRL        &kp EXCLAMATION  &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL         &kp AMPERSAND  &kp BSPC
+&kp ß      &kp BACKSLASH  &kp SLASH       &kp LBRC  &kp RBRC   &kp ASTERISK     &kp QUESTION     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS         &kp COLON      &kp AT_SIGN
+&kp LSHFT  &kp POUND      &kp DOLLAR      &kp PIPE  &kp TILDE  &kp GRAVE        &kp PLUS         &kp PERCENT           &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp SEMICOLON  &trans
+                                          &kp LGUI  &trans     &kp SPACE        &kp RET          &trans                &kp RALT
             >;
         };
 
         raise_layer {
             display-name = "Raise";
             bindings = <
-&kp TAB    &none        &kp BACKSPACE   &kp UP_ARROW    &kp DELETE       &none            &none      &kp N7  &kp N8    &kp N9  &kp PLUS   &kp MINUS
-&kp LCTRL  &kp PAGE_UP  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &none      &kp N4  &kp N5    &kp N6  &kp COMMA  &kp DOT
-&kp LSHFT  &none        &none           &none           &none            &none            &kp COLON  &kp N1  &kp N2    &kp N3  &kp SEMI   &kp TILDE
-                                        &kp LGUI        &trans           &kp SPACE        &kp RET    &trans  &kp RALT
+&kp TAB    &none        &kp BACKSPACE   &kp UP_ARROW    &kp DELETE       &none              &none      &kp N7  &kp N8    &kp N9  &kp PLUS   &kp MINUS
+&kp LCTRL  &kp PAGE_UP  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN      &none      &kp N4  &kp N5    &kp N6  &kp COMMA  &kp DOT
+&kp LSHFT  &none        &none           &none           &none            &none              &kp COLON  &kp N1  &kp N2    &kp N3  &kp SEMI   &kp TILDE
+                                        &kp LGUI        &trans           &kp SPACE          &kp RET    &trans  &kp RALT
             >;
         };
 
         ble-connect {
             bindings = <
-&trans      &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &out OUT_BLE  &out OUT_USB  &out OUT_TOG  &trans  &trans  &trans
-&none       &out OUT_BLE  &out OUT_USB  &out OUT_TOG  &trans        &trans          &trans        &trans        &trans        &trans  &trans  &trans
-                                        &trans        &trans        &trans          &trans        &trans        &trans
+&trans      &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &out OUT_BLE  &out OUT_USB  &out OUT_TOG  &trans  &trans  &trans
+&none       &out OUT_BLE  &out OUT_USB  &out OUT_TOG  &trans        &trans            &trans        &trans        &trans        &trans  &trans  &trans
+                                        &trans        &trans        &trans            &trans        &trans        &trans
             >;
         };
     };
