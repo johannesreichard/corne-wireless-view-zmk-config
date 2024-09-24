@@ -26,11 +26,6 @@ ZMK_UNICODE_PAIR(de_eszett,     N0, N0,  D,  F,    N1, E,   N9, E) // ß/ẞ
             bindings = <&kp ENTER>;
             key-positions = <19 20 21>;
         };
-
-        connect {
-            bindings = <&mo 3>;
-            key-positions = <37 24>;
-        };
     };
 
     keymap {
@@ -41,7 +36,7 @@ ZMK_UNICODE_PAIR(de_eszett,     N0, N0,  D,  F,    N1, E,   N9, E) // ß/ẞ
             bindings = <
 &kp TAB    &kp X      &kp V      &kp L      &kp C      &kp W    &kp K  &kp H      &kp G      &kp F    &kp Q  &kp BSPC
 &kp LCTRL  &kp U      &kp I      &kp A      &kp E      &kp O    &kp S  &kp N      &kp R      &kp T    &kp D  &kp Y
-&kp LSHFT  &kp de_oe  &kp de_ae  &kp de_ue  &kp P      &kp Z    &kp B  &kp M      &kp COMMA  &kp DOT  &kp J  &kp ESC
+&kp LSHFT  &none      &none      $none      &kp P      &kp Z    &kp B  &kp M      &kp COMMA  &kp DOT  &kp J  &kp ESC
                                  &kp LGUI   &kp SPACE  &mo 1    &mo 2  &kp SPACE  &kp RALT
             >;
         };
@@ -49,9 +44,9 @@ ZMK_UNICODE_PAIR(de_eszett,     N0, N0,  D,  F,    N1, E,   N9, E) // ß/ẞ
         lower_layer {
             display-name = "Lower";
             bindings = <
-&kp TAB        &none          &kp UNDERSCORE  &kp LBKT  &kp RBKT   &kp RCTRL       &kp EXCLAMATION  &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL         &kp AMPERSAND  &kp BSPC
-&kp de_eszett  &kp BACKSLASH  &kp SLASH       &kp LBRC  &kp RBRC   &kp ASTERISK    &kp QUESTION     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS         &kp COLON      &kp AT_SIGN
-&kp LSHFT      &kp POUND      &kp DOLLAR      &kp PIPE  &kp TILDE  &kp GRAVE       &kp PLUS         &kp PERCENT           &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp SEMICOLON  &trans
+&kp TAB    &none          &kp UNDERSCORE  &kp LBKT  &kp RBKT   &kp RCTRL       &kp EXCLAMATION  &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL         &kp AMPERSAND  &kp BSPC
+&none      &kp BACKSLASH  &kp SLASH       &kp LBRC  &kp RBRC   &kp ASTERISK    &kp QUESTION     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS         &kp COLON      &kp AT_SIGN
+&kp LSHFT  &kp POUND      &kp DOLLAR      &kp PIPE  &kp TILDE  &kp GRAVE       &kp PLUS         &kp PERCENT           &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp SEMICOLON  &trans
                                               &kp LGUI  &trans     &trans          &trans           &trans                &kp RALT
             >;
         };
@@ -73,6 +68,15 @@ ZMK_UNICODE_PAIR(de_eszett,     N0, N0,  D,  F,    N1, E,   N9, E) // ß/ẞ
 &none       &out OUT_BLE  &out OUT_USB  &out OUT_TOG  &trans        &trans          &trans        &trans        &trans        &trans  &trans  &trans
                                         &trans        &trans        &trans          &trans        &trans        &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        connect {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
