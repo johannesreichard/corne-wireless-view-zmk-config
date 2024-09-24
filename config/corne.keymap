@@ -11,6 +11,11 @@
             bindings = <&kp ENTER>;
             key-positions = <19 20 21>;
         };
+
+        connect {
+            bindings = <&mo 3>;
+            key-positions = <24 38>;
+        };
     };
 
     keymap {
