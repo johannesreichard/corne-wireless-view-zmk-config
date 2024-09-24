@@ -44,9 +44,9 @@
         lower_layer {
             display-name = "Lower";
             bindings = <
-&kp TAB    &none          &kp UNDERSCORE  &kp LBKT  &kp RBKT   &kp RCTRL        &kp EXCLAMATION  &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL         &kp AMPERSAND  &kp BSPC
-&kp ß      &kp BACKSLASH  &kp SLASH       &kp LBRC  &kp RBRC   &kp ASTERISK     &kp QUESTION     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS         &kp COLON      &kp AT_SIGN
-&kp LSHFT  &kp POUND      &kp DOLLAR      &kp PIPE  &kp TILDE  &kp GRAVE        &kp PLUS         &kp PERCENT           &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp SEMICOLON  &trans
+&kp TAB         &none          &kp UNDERSCORE  &kp LBKT  &kp RBKT   &kp RCTRL        &kp EXCLAMATION  &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL         &kp AMPERSAND  &kp BSPC
+&kp $de_eszett  &kp BACKSLASH  &kp SLASH       &kp LBRC  &kp RBRC   &kp ASTERISK     &kp QUESTION     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS         &kp COLON      &kp AT_SIGN
+&kp LSHFT       &kp POUND      &kp DOLLAR      &kp PIPE  &kp TILDE  &kp GRAVE        &kp PLUS         &kp PERCENT           &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp SEMICOLON  &trans
                                           &kp LGUI  &trans     &kp SPACE        &kp RET          &trans                &kp RALT
             >;
         };
